@@ -21,10 +21,8 @@ export const BirthdayHero = () => {
         </div>
         
         {/* Main heading */}
-        <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
-          <span className="bg-gradient-to-r from-pink-600 via-red-500 to-pink-600 bg-clip-text text-transparent">
-            Happy Birthday
-          </span>
+        <h1 className="text-6xl md:text-8xl font-display font-bold mb-6 animate-fade-in gradient-text">
+          Happy Birthday
         </h1>
         
         {/* Name with special styling */}

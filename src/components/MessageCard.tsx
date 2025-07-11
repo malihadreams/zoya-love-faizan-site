@@ -4,7 +4,7 @@ import { Heart, Quote } from "lucide-react";
 export const MessageCard = () => {
   return (
     <div className="max-w-4xl mx-auto">
-      <div className="bg-white/90 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-pink-100 hover:shadow-3xl transition-shadow duration-300">
+      <div className="glass-card rounded-3xl p-8 md:p-12 hover:shadow-elevated transition-all duration-300">
         <div className="text-center mb-8">
           <Quote className="w-12 h-12 text-pink-400 mx-auto mb-4" />
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-2">A Special Message</h2>
