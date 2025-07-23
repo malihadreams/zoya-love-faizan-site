@@ -1,0 +1,101 @@
+import { useState, useEffect } from 'react';
+import { Calendar, Clock } from 'lucide-react';
+
+export const BirthdayCountdown = () => {
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  const [isToday, setIsToday] = useState(false);
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const now = new Date();
+      const currentYear = now.getFullYear();
+      
+      // Birthday is July 31st
+      let birthday = new Date(currentYear, 6, 31); // Month is 0-indexed, so 6 = July
+      
+      // If birthday has passed this year, set it for next year
+      if (now > birthday) {
+        birthday = new Date(currentYear + 1, 6, 31);
+      }
+      
+      // Check if today is the birthday
+      const today = new Date();
+      const todayMonth = today.getMonth();
+      const todayDate = today.getDate();
+      setIsToday(todayMonth === 6 && todayDate === 31);
+      
+      const difference = birthday.getTime() - now.getTime();
+      
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((difference / 1000 / 60) % 60),
+          seconds: Math.floor((difference / 1000) % 60)
+        });
+      }
+    };
+
+    calculateTimeLeft();
+    const timer = setInterval(calculateTimeLeft, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  if (isToday) {
+    return (
+      <div className="glass-card rounded-3xl p-8 mb-12 text-center max-w-2xl mx-auto shadow-elevated glow-effect">
+        <div className="flex items-center justify-center gap-3 mb-4">
+          <Calendar className="w-8 h-8 text-primary animate-pulse" />
+          <h2 className="text-3xl md:text-4xl font-display font-bold gradient-text">
+            Today is the Day! 🎉
+          </h2>
+          <Calendar className="w-8 h-8 text-primary animate-pulse" />
+        </div>
+        <p className="text-xl text-muted-foreground font-accent">
+          July 31st - Happy Birthday Zoya! ✨
+        </p>
+      </div>
+    );
+  }
+
+  return (
+    <div className="glass-card rounded-3xl p-8 mb-12 text-center max-w-4xl mx-auto shadow-elevated">
+      <div className="flex items-center justify-center gap-3 mb-6">
+        <Clock className="w-8 h-8 text-primary animate-pulse" />
+        <h2 className="text-3xl md:text-4xl font-display font-bold gradient-text">
+          Countdown to Zoya's Birthday
+        </h2>
+        <Clock className="w-8 h-8 text-primary animate-pulse" />
+      </div>
+      
+      <p className="text-xl text-muted-foreground mb-8 font-accent">
+        July 31st - The Most Special Day! 🎂
+      </p>
+      
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+        {[
+          { label: 'Days', value: timeLeft.days },
+          { label: 'Hours', value: timeLeft.hours },
+          { label: 'Minutes', value: timeLeft.minutes },
+          { label: 'Seconds', value: timeLeft.seconds }
+        ].map((item, index) => (
+          <div key={item.label} className="bg-gradient-primary rounded-2xl p-4 md:p-6 text-primary-foreground shadow-glow">
+            <div className="text-3xl md:text-4xl font-bold font-display mb-2 animate-pulse">
+              {item.value.toString().padStart(2, '0')}
+            </div>
+            <div className="text-sm md:text-base font-accent font-medium opacity-90">
+              {item.label}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
