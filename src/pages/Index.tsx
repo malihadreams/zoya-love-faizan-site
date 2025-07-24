@@ -5,9 +5,10 @@ import { MessageCard } from "@/components/MessageCard";
 import { FloatingHearts } from "@/components/FloatingHearts";
 import { BirthdayCountdown } from "@/components/BirthdayCountdown";
 import { BirthdayCandles } from "@/components/BirthdayCandles";
-import { PhotoMemories } from "@/components/PhotoMemories";
 import { BirthdayWishlist } from "@/components/BirthdayWishlist";
-import { BirthdayTimeline } from "@/components/BirthdayTimeline";
+import { MemoryLane } from "@/components/MemoryLane";
+import { CelebrationMoments } from "@/components/CelebrationMoments";
+import { LoveNotes } from "@/components/LoveNotes";
 import { InteractiveBirthdayCard } from "@/components/InteractiveBirthdayCard";
 import { FunFacts } from "@/components/FunFacts";
 import { BirthdayPlaylist } from "@/components/BirthdayPlaylist";
@@ -29,7 +30,7 @@ const Index = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-3 mb-8">
             <Cake className="w-8 h-8 text-primary animate-bounce" />
-            <h2 className="text-4xl md:text-5xl font-display font-bold gradient-text">
+            <h2 className="text-4xl md:text-5xl font-script font-bold bg-gradient-to-r from-primary to-pink-500 bg-clip-text text-transparent italic">
               Make a Wish! 
             </h2>
             <Cake className="w-8 h-8 text-primary animate-bounce" />
@@ -47,7 +48,7 @@ const Index = () => {
         <div className="mt-20 text-center">
           <div className="inline-flex items-center gap-2 mb-8">
             <Sparkles className="w-6 h-6 text-pink-500" />
-            <h2 className="text-3xl md:text-4xl font-display font-bold gradient-text">
+            <h2 className="text-3xl md:text-4xl font-script font-bold bg-gradient-to-r from-primary to-pink-500 bg-clip-text text-transparent italic">
               Special Birthday Wishes
             </h2>
             <Sparkles className="w-6 h-6 text-pink-500" />
@@ -74,11 +75,14 @@ const Index = () => {
           </div>
         </div>
         
-        {/* Photo Memories Section */}
-        <PhotoMemories />
-        
         {/* Interactive Birthday Card */}
         <InteractiveBirthdayCard />
+        
+        {/* Love Notes */}
+        <LoveNotes />
+        
+        {/* Celebration Moments */}
+        <CelebrationMoments />
         
         {/* Birthday Wishlist */}
         <BirthdayWishlist />
@@ -86,8 +90,8 @@ const Index = () => {
         {/* Fun Facts */}
         <FunFacts />
         
-        {/* Birthday Timeline */}
-        <BirthdayTimeline />
+        {/* Memory Lane */}
+        <MemoryLane />
         
         {/* Birthday Playlist */}
         <BirthdayPlaylist />

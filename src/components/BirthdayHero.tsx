@@ -21,7 +21,7 @@ export const BirthdayHero = () => {
         </div>
         
         {/* Main heading */}
-        <h1 className="text-6xl md:text-8xl font-display font-bold mb-6 animate-fade-in gradient-text">
+        <h1 className="text-6xl md:text-8xl font-script font-bold mb-6 animate-fade-in bg-gradient-to-r from-primary via-pink-500 to-rose-400 bg-clip-text text-transparent italic">
           Happy Birthday
         </h1>
         
@@ -29,7 +29,7 @@ export const BirthdayHero = () => {
         <div className="mb-8">
           <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm rounded-full px-8 py-4 shadow-2xl border border-pink-200">
             <Heart className="w-8 h-8 text-red-500 animate-pulse" />
-            <span className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
+            <span className="text-4xl md:text-5xl font-cursive font-bold bg-gradient-to-r from-rose-400 via-pink-500 to-primary bg-clip-text text-transparent italic">
               Zoya
             </span>
             <Heart className="w-8 h-8 text-red-500 animate-pulse" />

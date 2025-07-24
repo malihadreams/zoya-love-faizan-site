@@ -19,11 +19,14 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				'display': ['Playfair Display', 'serif'],
-				'body': ['Inter', 'sans-serif'],
-				'accent': ['Poppins', 'sans-serif'],
-			},
+      fontFamily: {
+        'display': ['Playfair Display', 'serif'],
+        'body': ['Inter', 'sans-serif'],
+        'accent': ['Poppins', 'sans-serif'],
+        'script': ['Dancing Script', 'cursive'],
+        'cursive': ['Great Vibes', 'cursive'],
+        'handwriting': ['Satisfy', 'cursive'],
+      },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',

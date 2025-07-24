@@ -1,6 +1,6 @@
 import { Calendar, Heart, Star, Gift, Cake } from "lucide-react";
 
-export const BirthdayTimeline = () => {
+export const MemoryLane = () => {
   const timelineEvents = [
     {
       id: 1,
@@ -41,13 +41,13 @@ export const BirthdayTimeline = () => {
       <div className="text-center mb-12">
         <div className="inline-flex items-center gap-3 mb-6">
           <Calendar className="w-8 h-8 text-primary animate-pulse" />
-          <h2 className="text-4xl md:text-5xl font-display font-bold gradient-text">
-            Your Special Timeline
+          <h2 className="text-4xl md:text-5xl font-script font-bold bg-gradient-to-r from-primary to-pink-500 bg-clip-text text-transparent">
+            Memory Lane of Love
           </h2>
           <Calendar className="w-8 h-8 text-primary animate-pulse" />
         </div>
-        <p className="text-xl text-muted-foreground font-accent">
-          Celebrating your journey and the beautiful future ahead! ⏰
+        <p className="text-xl text-muted-foreground font-handwriting italic">
+          A beautiful journey through time, celebrating every moment of you 💕
         </p>
       </div>
 
