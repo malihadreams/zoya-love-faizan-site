@@ -136,7 +136,8 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 1s ease-out',
-				'float': 'float linear infinite'
+				'float': 'float linear infinite',
+				'spin-slow': 'spin 3s linear infinite'
 			}
 		}
 	},

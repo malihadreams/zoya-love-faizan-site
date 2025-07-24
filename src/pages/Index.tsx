@@ -3,20 +3,19 @@ import { Heart, Gift, Sparkles, Star, Calendar, Cake } from "lucide-react";
 import { BirthdayHero } from "@/components/BirthdayHero";
 import { MessageCard } from "@/components/MessageCard";
 import { FloatingHearts } from "@/components/FloatingHearts";
+import { FloatingStars } from "@/components/FloatingStars";
 import { BirthdayCountdown } from "@/components/BirthdayCountdown";
-import { BirthdayCandles } from "@/components/BirthdayCandles";
 import { BirthdayWishlist } from "@/components/BirthdayWishlist";
 import { MemoryLane } from "@/components/MemoryLane";
 import { CelebrationMoments } from "@/components/CelebrationMoments";
 import { LoveNotes } from "@/components/LoveNotes";
-import { InteractiveBirthdayCard } from "@/components/InteractiveBirthdayCard";
 import { FunFacts } from "@/components/FunFacts";
-import { BirthdayPlaylist } from "@/components/BirthdayPlaylist";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-background relative overflow-hidden">
       <FloatingHearts />
+      <FloatingStars />
       
       {/* Hero Section */}
       <BirthdayHero />
@@ -26,20 +25,6 @@ const Index = () => {
         {/* Birthday Countdown */}
         <BirthdayCountdown />
         
-        {/* Birthday Candles */}
-        <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-3 mb-8">
-            <Cake className="w-8 h-8 text-primary animate-bounce" />
-            <h2 className="text-4xl md:text-5xl font-script font-bold bg-gradient-to-r from-primary to-pink-500 bg-clip-text text-transparent italic">
-              Make a Wish! 
-            </h2>
-            <Cake className="w-8 h-8 text-primary animate-bounce" />
-          </div>
-          <BirthdayCandles />
-          <p className="text-lg md:text-xl text-muted-foreground font-accent italic">
-            "Blow out the candles and make your dreams come true!" ✨
-          </p>
-        </div>
         
         {/* Birthday Message */}
         <MessageCard />
@@ -75,8 +60,6 @@ const Index = () => {
           </div>
         </div>
         
-        {/* Interactive Birthday Card */}
-        <InteractiveBirthdayCard />
         
         {/* Love Notes */}
         <LoveNotes />
@@ -93,8 +76,6 @@ const Index = () => {
         {/* Memory Lane */}
         <MemoryLane />
         
-        {/* Birthday Playlist */}
-        <BirthdayPlaylist />
         
         {/* Additional Wishes Section */}
         <div className="mt-20">
