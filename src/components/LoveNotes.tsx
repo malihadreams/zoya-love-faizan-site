@@ -4,43 +4,43 @@ export const LoveNotes = () => {
   const notes = [
     {
       id: 1,
-      message: "Happy Birthday to my amazing best friend! You light up every room you enter.",
-      author: "💕 Your Best Friend, Faizan",
+      message: "Happy Birthday to the most beautiful soul I know! You make my heart skip a beat every time I see your smile.",
+      author: "💕 Your Loving Faizan",
       color: "bg-gradient-to-br from-pink-500 to-rose-400",
       textColor: "text-white"
     },
     {
       id: 2,
-      message: "Thank you for being the most incredible friend anyone could ask for. Your friendship means the world to me!",
-      author: "💝 With Endless Love",
+      message: "You're not just special to me, you're everything! Your beauty, inside and out, leaves me speechless every day.",
+      author: "💝 With All My Love",
       color: "bg-gradient-to-br from-purple-500 to-pink-400",
       textColor: "text-white"
     },
     {
       id: 3,
-      message: "Best friends like you are rare gems. You make every moment special and every memory beautiful!",
-      author: "✨ Forever Your Friend",
+      message: "Every moment with you feels like a dream. You're the most precious person in my life, and I cherish you deeply.",
+      author: "✨ Forever Yours",
       color: "bg-gradient-to-br from-blue-500 to-purple-400",
       textColor: "text-white"
     },
     {
       id: 4,
-      message: "On your special day, I want you to know how grateful I am to have you as my best friend. You're simply amazing!",
-      author: "🌹 Always Here For You",
+      message: "On your special day, I want you to know how much you mean to me. You're my sunshine, my happiness, my everything!",
+      author: "🌹 Your Devoted Admirer",
       color: "bg-gradient-to-br from-yellow-500 to-pink-400",
       textColor: "text-white"
     },
     {
       id: 5,
-      message: "Wishing my best friend the happiest birthday ever! May this year bring you all the joy you deserve.",
-      author: "🎉 Celebrating You",
+      message: "Wishing the most amazing girl the happiest birthday! You deserve all the love and happiness in the world.",
+      author: "🎉 Someone Who Adores You",
       color: "bg-gradient-to-br from-green-500 to-blue-400",
       textColor: "text-white"
     },
     {
       id: 6,
-      message: "You're not just my best friend, you're like family to me. Happy Birthday, beautiful soul!",
-      author: "💖 Forever Grateful",
+      message: "You're not just beautiful, you're absolutely stunning! Happy Birthday to the girl who has stolen my heart completely.",
+      author: "💖 Forever Enchanted by You",
       color: "bg-gradient-to-br from-red-500 to-pink-400",
       textColor: "text-white"
     }
@@ -66,14 +66,14 @@ export const LoveNotes = () => {
 
       <div className="text-center mb-16 relative z-10">
         <div className="inline-flex items-center gap-4 mb-8">
-          <Users className="w-10 h-10 text-pink-500 animate-bounce" />
-          <h2 className="text-5xl md:text-7xl font-script font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 bg-clip-text text-transparent">
-            Best Friend Notes
+          <Heart className="w-10 h-10 text-red-500 animate-bounce" />
+          <h2 className="text-5xl md:text-7xl font-script font-bold bg-gradient-to-r from-red-500 via-pink-500 to-rose-500 bg-clip-text text-transparent">
+            Love Letters & Sweet Messages
           </h2>
-          <Heart className="w-10 h-10 text-pink-500 animate-bounce" />
+          <Heart className="w-10 h-10 text-red-500 animate-bounce" />
         </div>
         <p className="text-2xl md:text-3xl text-muted-foreground font-handwriting italic">
-          Sweet messages from your best friend's heart 💌✨
+          Romantic notes from someone who adores you deeply 💕💌
         </p>
       </div>
 
