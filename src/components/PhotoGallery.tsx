@@ -3,24 +3,24 @@ import { Camera, Heart, Smile, Sparkles } from "lucide-react";
 export const PhotoGallery = () => {
   const photos = [
     {
-      title: "Beautiful Memories",
-      description: "Every photo tells our amazing story! 📸",
-      gradient: "from-pink-300 to-purple-300"
+      title: "Our Love Story",
+      description: "Every moment with you feels like magic! 💕",
+      gradient: "from-pink-400 to-red-400"
     },
     {
-      title: "Friendship Goals",
-      description: "Together we create the best moments! 💕",
-      gradient: "from-blue-300 to-pink-300"
+      title: "Soulmate Vibes",
+      description: "You're my person, my everything! 🥰",
+      gradient: "from-purple-400 to-pink-400"
     },
     {
-      title: "Happy Times",
-      description: "Your smile lights up every picture! ✨",
-      gradient: "from-purple-300 to-red-300"
+      title: "Forever Together",
+      description: "In your arms, I found my home! 💖",
+      gradient: "from-red-400 to-pink-500"
     },
     {
-      title: "Special Moments",
-      description: "Making memories that last forever! 🌟",
-      gradient: "from-green-300 to-blue-300"
+      title: "Endless Love",
+      description: "My heart beats only for you, beautiful! 💞",
+      gradient: "from-rose-400 to-purple-400"
     }
   ];
 
@@ -31,12 +31,12 @@ export const PhotoGallery = () => {
           <div className="flex items-center justify-center gap-3 mb-4">
             <Camera className="w-8 h-8 text-primary animate-pulse" />
             <h2 className="text-3xl md:text-4xl font-display font-bold gradient-text">
-              Our Memory Gallery
+              💕 Our Love Journey 💕
             </h2>
             <Camera className="w-8 h-8 text-primary animate-pulse" />
           </div>
           <p className="text-lg text-muted-foreground font-accent">
-            Beautiful moments captured forever! 📷✨
+            Capturing our beautiful love story, one moment at a time! 📷💖
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export const PhotoGallery = () => {
           <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg">
             <Smile className="w-5 h-5 text-primary" />
             <span className="font-accent text-muted-foreground">
-              More amazing memories coming soon! 💕
+              Forever creating beautiful memories together! 💕✨
             </span>
           </div>
         </div>

@@ -26,13 +26,17 @@ export const BirthdayHero = () => {
         </h1>
         
         {/* Name with special styling */}
-        <div className="mb-8">
-          <div className="inline-flex items-center gap-2 md:gap-3 bg-white/90 backdrop-blur-sm rounded-full px-4 md:px-8 py-3 md:py-4 shadow-2xl border border-pink-200">
-            <Heart className="w-5 h-5 md:w-8 md:h-8 text-red-500 animate-pulse" />
-            <span className="text-3xl md:text-5xl lg:text-6xl font-cursive font-bold bg-gradient-to-r from-rose-400 via-pink-500 to-primary bg-clip-text text-transparent italic">
-              Zoya
-            </span>
-            <Heart className="w-5 h-5 md:w-8 md:h-8 text-red-500 animate-pulse" />
+        <div className="mb-8 relative">
+          <div className="absolute inset-0 bg-gradient-to-r from-pink-400/20 via-purple-400/20 to-red-400/20 blur-3xl animate-pulse"></div>
+          <div className="relative inline-flex items-center gap-2 md:gap-4 bg-gradient-to-r from-white/95 via-pink-50/95 to-white/95 backdrop-blur-sm rounded-full px-6 md:px-10 py-4 md:py-6 shadow-2xl border-2 border-gradient-to-r from-pink-200 via-purple-200 to-pink-200 hover:scale-105 transition-all duration-300">
+            <Heart className="w-6 h-6 md:w-10 md:h-10 text-red-500 animate-bounce" />
+            <div className="relative">
+              <span className="text-4xl md:text-6xl lg:text-7xl font-cursive font-black bg-gradient-to-r from-rose-500 via-pink-500 to-purple-600 bg-clip-text text-transparent italic drop-shadow-lg animate-pulse">
+                Zoya
+              </span>
+              <div className="absolute -inset-1 bg-gradient-to-r from-pink-400 to-purple-400 rounded-lg blur opacity-30 animate-pulse"></div>
+            </div>
+            <Heart className="w-6 h-6 md:w-10 md:h-10 text-red-500 animate-bounce" style={{ animationDelay: '0.5s' }} />
           </div>
         </div>
         
