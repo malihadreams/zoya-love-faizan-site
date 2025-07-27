@@ -27,12 +27,12 @@ export const BirthdayHero = () => {
         
         {/* Name with special styling */}
         <div className="mb-8">
-          <div className="inline-flex items-center gap-3 bg-white/90 backdrop-blur-sm rounded-full px-8 py-4 shadow-2xl border border-pink-200">
-            <Heart className="w-8 h-8 text-red-500 animate-pulse" />
-            <span className="text-6xl md:text-8xl lg:text-9xl font-cursive font-bold bg-gradient-to-r from-rose-400 via-pink-500 to-primary bg-clip-text text-transparent italic">
+          <div className="inline-flex items-center gap-2 md:gap-3 bg-white/90 backdrop-blur-sm rounded-full px-4 md:px-8 py-3 md:py-4 shadow-2xl border border-pink-200">
+            <Heart className="w-5 h-5 md:w-8 md:h-8 text-red-500 animate-pulse" />
+            <span className="text-3xl md:text-5xl lg:text-6xl font-cursive font-bold bg-gradient-to-r from-rose-400 via-pink-500 to-primary bg-clip-text text-transparent italic">
               Zoya
             </span>
-            <Heart className="w-8 h-8 text-red-500 animate-pulse" />
+            <Heart className="w-5 h-5 md:w-8 md:h-8 text-red-500 animate-pulse" />
           </div>
         </div>
         

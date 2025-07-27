@@ -10,6 +10,8 @@ import { MemoryLane } from "@/components/MemoryLane";
 import { CelebrationMoments } from "@/components/CelebrationMoments";
 import { LoveNotes } from "@/components/LoveNotes";
 import { FunFacts } from "@/components/FunFacts";
+import { MagicWishes } from "@/components/MagicWishes";
+import { PhotoGallery } from "@/components/PhotoGallery";
 
 const Index = () => {
   return (
@@ -62,7 +64,11 @@ const Index = () => {
         
         
         {/* Love Notes */}
-        <LoveNotes />
+          <MagicWishes />
+          
+          <PhotoGallery />
+          
+          <LoveNotes />
         
         {/* Celebration Moments */}
         <CelebrationMoments />
