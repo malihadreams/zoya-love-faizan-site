@@ -42,7 +42,7 @@ export const BirthdayHero = () => {
         
         {/* Subtitle */}
         <p className="text-xl md:text-2xl text-gray-700 mb-8 font-medium">
-          Wishing you the most beautiful day filled with love and joy! 🎉
+          Another year of amazing adventures with the most special person! 🌟💫
         </p>
         
         {/* Animated hearts */}

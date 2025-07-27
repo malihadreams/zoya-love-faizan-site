@@ -3,23 +3,23 @@ import { Camera, Heart, Smile, Sparkles } from "lucide-react";
 export const PhotoGallery = () => {
   const photos = [
     {
-      title: "Our Love Story",
-      description: "Every moment with you feels like magic! 💕",
-      gradient: "from-pink-400 to-red-400"
-    },
-    {
-      title: "Soulmate Vibes",
-      description: "You're my person, my everything! 🥰",
+      title: "Special Bond",
+      description: "We have something really special, don't we? 💫",
       gradient: "from-purple-400 to-pink-400"
     },
     {
-      title: "Forever Together",
-      description: "In your arms, I found my home! 💖",
-      gradient: "from-red-400 to-pink-500"
+      title: "More Than Friends",
+      description: "There's this connection we can't explain... 🌟",
+      gradient: "from-pink-400 to-purple-400"
     },
     {
-      title: "Endless Love",
-      description: "My heart beats only for you, beautiful! 💞",
+      title: "Our Secret World",
+      description: "In our little world, everything feels perfect! ✨",
+      gradient: "from-blue-400 to-pink-400"
+    },
+    {
+      title: "Something Different",
+      description: "What we have is rare and beautiful! 💕",
       gradient: "from-rose-400 to-purple-400"
     }
   ];
@@ -31,12 +31,12 @@ export const PhotoGallery = () => {
           <div className="flex items-center justify-center gap-3 mb-4">
             <Camera className="w-8 h-8 text-primary animate-pulse" />
             <h2 className="text-3xl md:text-4xl font-display font-bold gradient-text">
-              💕 Our Love Journey 💕
+              💫 Our Special Connection 💫
             </h2>
             <Camera className="w-8 h-8 text-primary animate-pulse" />
           </div>
           <p className="text-lg text-muted-foreground font-accent">
-            Capturing our beautiful love story, one moment at a time! 📷💖
+            Capturing moments that mean everything to us! 📷✨
           </p>
         </div>
 
@@ -76,7 +76,7 @@ export const PhotoGallery = () => {
           <div className="inline-flex items-center gap-2 bg-white/90 backdrop-blur-sm rounded-full px-6 py-3 shadow-lg">
             <Smile className="w-5 h-5 text-primary" />
             <span className="font-accent text-muted-foreground">
-              Forever creating beautiful memories together! 💕✨
+              Our bond keeps getting stronger every day! 💫✨
             </span>
           </div>
         </div>
