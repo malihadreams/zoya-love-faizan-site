@@ -80,31 +80,27 @@ export const BirthdayCountdown = () => {
   }
 
   return (
-    <div className="relative overflow-hidden mb-12">
-      {/* Background Effect */}
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-pink-500/10 to-primary/10 rounded-3xl blur-2xl scale-110"></div>
-      
-      <div className="relative glass-card rounded-3xl p-6 md:p-8 text-center max-w-5xl mx-auto shadow-elevated border border-white/10">
-        {/* Header with rotating border */}
-        <div className="relative mb-8">
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-pink-500 to-primary rounded-2xl opacity-75 animate-spin-slow"></div>
-          <div className="relative bg-background/95 backdrop-blur-sm rounded-2xl p-6 m-1">
+    <div className="mb-12">
+      <div className="glass-card rounded-3xl p-6 md:p-8 text-center max-w-5xl mx-auto shadow-elevated border border-white/20">
+        {/* Header */}
+        <div className="mb-8">
+          <div className="bg-gradient-to-r from-primary to-pink-500 rounded-2xl p-6 mb-6">
             <div className="flex flex-col items-center gap-4">
               <div className="flex items-center gap-3">
-                <Clock className="w-8 h-8 text-primary" />
-                <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold bg-gradient-to-r from-primary via-pink-500 to-primary bg-clip-text text-transparent">
+                <Clock className="w-8 h-8 text-white" />
+                <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white">
                   Countdown to Zoya's Birthday
                 </h2>
-                <Clock className="w-8 h-8 text-primary" />
+                <Clock className="w-8 h-8 text-white" />
               </div>
-              <p className="text-lg md:text-xl text-muted-foreground font-accent">
+              <p className="text-lg md:text-xl text-white/90 font-accent">
                 July 31st - The Most Awaited Day! 🎂
               </p>
             </div>
           </div>
         </div>
         
-        {/* Countdown Grid with Enhanced Design */}
+        {/* Countdown Grid */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-8">
           {[
             { label: 'Days', value: timeLeft.days, icon: '📅' },
@@ -114,21 +110,14 @@ export const BirthdayCountdown = () => {
           ].map((item, index) => (
             <div 
               key={item.label} 
-              className="relative group"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 md:p-6 border border-white/20 hover:bg-white/20 transition-colors duration-300"
             >
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-primary rounded-2xl opacity-75 blur-sm group-hover:blur-md transition-all duration-300"></div>
-              
-              {/* Main card */}
-              <div className="relative bg-gradient-primary rounded-2xl p-4 md:p-6 text-primary-foreground shadow-glow hover:shadow-2xl transition-all duration-300 hover:scale-105 cursor-pointer border border-white/20">
-                <div className="text-sm opacity-75 mb-2">{item.icon}</div>
-                <div className="text-3xl md:text-4xl lg:text-5xl font-bold font-display mb-2">
-                  {item.value.toString().padStart(2, '0')}
-                </div>
-                <div className="text-sm md:text-base font-accent font-medium opacity-90">
-                  {item.label}
-                </div>
+              <div className="text-sm opacity-75 mb-2">{item.icon}</div>
+              <div className="text-3xl md:text-4xl lg:text-5xl font-bold font-display mb-2 text-foreground">
+                {item.value.toString().padStart(2, '0')}
+              </div>
+              <div className="text-sm md:text-base font-accent font-medium text-muted-foreground">
+                {item.label}
               </div>
             </div>
           ))}
@@ -136,11 +125,11 @@ export const BirthdayCountdown = () => {
         
         {/* Bottom Message */}
         <div className="flex justify-center">
-          <div className="bg-gradient-to-r from-white/10 to-white/20 backdrop-blur-sm rounded-full px-6 py-3 border border-white/10">
+          <div className="bg-gradient-to-r from-primary/20 to-pink-500/20 backdrop-blur-sm rounded-full px-6 py-3 border border-primary/30">
             <p className="text-base md:text-lg font-accent text-foreground flex items-center gap-2">
-              <span className="animate-pulse">✨</span>
+              <span>✨</span>
               Every moment brings us closer to your special day!
-              <span className="animate-pulse">✨</span>
+              <span>✨</span>
             </p>
           </div>
         </div>
