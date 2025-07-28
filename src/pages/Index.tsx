@@ -16,6 +16,7 @@ import { BirthdayQuotes } from "@/components/BirthdayQuotes";
 import { BirthdaySuprises } from "@/components/BirthdaySuprises";
 
 const Index = () => {
+  console.log("Index component rendering...");
   return (
     <div className="min-h-screen bg-gradient-background relative overflow-hidden">
       <FloatingHearts />

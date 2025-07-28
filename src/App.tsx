@@ -6,7 +6,9 @@ import Index from "./pages/Index";
 
 const queryClient = new QueryClient();
 
-const App = () => (
+const App = () => {
+  console.log("App component rendering...");
+  return (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
@@ -16,6 +18,7 @@ const App = () => (
       </div>
     </TooltipProvider>
   </QueryClientProvider>
-);
+  );
+};
 
 export default App;

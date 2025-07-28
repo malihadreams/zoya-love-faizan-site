@@ -33,7 +33,7 @@ export const BirthdayHero = () => {
         {/* Rotating circle with sparkles */}
         <div className="relative mb-8">
           <div className="w-80 h-80 md:w-96 md:h-96 mx-auto relative">
-            <div className="absolute inset-0 border-4 border-dashed border-gradient-to-r from-pink-400 via-purple-400 to-rose-400 rounded-full animate-spin opacity-30" style={{ animationDuration: '20s' }}></div>
+            <div className="absolute inset-0 border-4 border-dashed border-pink-400 rounded-full animate-spin opacity-30" style={{ animationDuration: '20s' }}></div>
             <div className="absolute inset-4 border-2 border-dotted border-purple-300 rounded-full animate-spin opacity-40" style={{ animationDuration: '15s', animationDirection: 'reverse' }}></div>
             
             {/* Center content */}
