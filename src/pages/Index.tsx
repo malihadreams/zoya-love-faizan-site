@@ -12,6 +12,8 @@ import { LoveNotes } from "@/components/LoveNotes";
 import { FunFacts } from "@/components/FunFacts";
 import { MagicWishes } from "@/components/MagicWishes";
 import { PhotoGallery } from "@/components/PhotoGallery";
+import { BirthdayActivities } from "@/components/BirthdayActivities";
+import { BirthdayQuotes } from "@/components/BirthdayQuotes";
 
 const Index = () => {
   return (
@@ -82,6 +84,11 @@ const Index = () => {
         {/* Memory Lane */}
         <MemoryLane />
         
+        {/* Birthday Activities */}
+        <BirthdayActivities />
+        
+        {/* Birthday Quotes */}
+        <BirthdayQuotes />
         
         {/* Additional Wishes Section */}
         <div className="mt-20">
