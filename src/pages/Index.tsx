@@ -12,7 +12,6 @@ import { LoveNotes } from "@/components/LoveNotes";
 import { FunFacts } from "@/components/FunFacts";
 import { MagicWishes } from "@/components/MagicWishes";
 import { PhotoGallery } from "@/components/PhotoGallery";
-import { BirthdayActivities } from "@/components/BirthdayActivities";
 import { BirthdayQuotes } from "@/components/BirthdayQuotes";
 import { BirthdaySuprises } from "@/components/BirthdaySuprises";
 
@@ -84,9 +83,6 @@ const Index = () => {
         
         {/* Memory Lane */}
         <MemoryLane />
-        
-        {/* Birthday Activities */}
-        <BirthdayActivities />
         
         {/* Birthday Surprises */}
         <BirthdaySuprises />
